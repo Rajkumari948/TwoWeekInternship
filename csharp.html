@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page Clone - Oracle DCL</title>
+    <link rel="stylesheet" href="HTML/csharp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top-header">
+        <a class="header-left">
+                <div class="animated-logo">
+    <div class="logo-rotating">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="_back"></div>
+            <div class="_right"></div>
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <span class="animated-sitelogo">C# SHARP</span>
+</div>
+</div>
+</a>
+
+  <input type="checkbox" id="toggle">
+  <div class="search-box">
+    <input type="text" placeholder="Search...">
+    <label for="toggle">🔍 search</label>
+  </div>
+            <div class="front"></div>
+            <div class="_back"></div>
+            <div class="_right"></div>
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+   
+    </div></a>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Tech</a>
+                <a href="#">News</a>
+                <a href="#">Videos</a>
+                <a href="#">Forums</a>
+                <a href="#">Trainings</a>
+                <a href="#">Books</a>
+                <a href="#">Events</a>
+                <a href="#">More</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <button class="contribute-btn">+ Contribute</button>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <aside class="left-nav">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-fire"></i>
+            <i class="fas fa-bookmark"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-cog"></i>
+        </aside>
+
+        <main class="content-wrapper">
+            <article class="article-content">
+                <div class="banner">
+                    <h2><marquee direction="left">Mastering Prompt Engineering - just $499 - Enroll Now</marquee></h2>
+                </div>
+
+                <div class="article-header">
+                <div class="banner">
+    <h2>Mastering GRANT & REVOKE in  Database (DCL)</h2>
+
+    <div class="article-meta-wrapper">
+        
+        <div class="author-section">
+            <div class="author-avatar">
+                <img src="IMAGE/download.png" height="30" width="30" alt="Raj Kumari">
+            </div>
+            <span class="author-name">Raj Kumari</span>
+        </div>
+            <span class="separator">|</span>
+            <span class="meta-item"> Dec 27</span>
+            <span class="meta-item">👁️ 1.5K</span>
+            <span class="meta-item">👍 0</span>
+            <span class="meta-item">💬 25</span>
+            <span class="blog-tag">Blog</span>
+        </div>
+
+    </div> 
+</div>
+
+                <div class="article-body">
+                    <h2>Introduction</h2>
+                    <p>In Oracle database, <strong>DCL (Data Control Language)</strong> commands are essential for managing user access and database security.</p>
+                    <p>The two primary DCL commands are:</p>
+                    <ul>
+                        <li><strong>GRANT</strong> - To assign privileges to users or roles.</li>
+                        <li><strong>REVOKE</strong> - To remove privileges from users or roles.</li>
+                    </ul>
+                    <hr>
+                    <h2>1. What is GRANT in Oracle?</h2>
+                    <p>The <strong>GRANT</strong> command is used to give users or roles specific privileges on database objects.</p>
+                    <p>Common Privileges:</p>
+                    <ul>
+                        <li><strong>SELECT</strong> - Read data from tables.</li>
+                        <li><strong>INSERT</strong> - Add new rows to tables.</li>
+                        <li><strong>UPDATE</strong>  Modify existing rows in tables.</li>
+                        <li><strong>DELETE</strong> - Remove rows from tables.</li>
+                        <li><strong>CONNECT</strong> - Allow user login.</li>
+                        <li><strong>RESOURCE</strong> - Allow user to create database objects.</li>
+                    </ul>
+
+                    <h2>2. What is REVOKE in Oracle?</h2>
+                    <p>The <strong>REVOKE</strong> command is used to remove privileges from users or roles.</p>
+
+                    <h2>3. How to Create a User and Grant Privileges (Step-by-Step)</h2>
+                    <p>step 1:Create a New User</p>
+
+                <div class="code-container">
+                   <div class="line-number">1</div>
+                        <div class="code-content"> REVOKE SELECT ON EMP_IND FROM C## RAJ KUMARI;</div>
+                    </div>
+                   <div class="code-container">
+                   <div class="line-number">1</div>
+                       <div class="code-content"> GRANT CONNECT, RESOURCE TO C## RAJ KUMARI; </div>
+                   </div>
+                
+                   
+
+                    <p>step 2: Grant Basic Access(Login & Resource Use)</p>
+                    <br>
+                    
+                <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">GRANT CONNECT, RESOURCE TO C## RAJ KUMARI;</div>
+                    </div>
+
+                    <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">GRANT SELECT ON EMP_IND TO C## RAJ KUMARI;</div>
+                    </div>
+                    
+
+                    <ul>
+                        <li><p>CONNECT- Allows user to log in.</p></li>
+                        <li><p>RESOURCE- Allows user to create tables, views, etc.</p></li>
+                    </ul>
+
+                    <p>step 3: Grant Privileges on specific tables</p>
+                    <br>
+
+                    <class class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">GRANT SELECT ON EMP_IND TO C## RAJ KUMARI;</div>
+                         </class>
+                 
+                    
+                    <b>Tips</b>:Always grant the least amount of privileges necessary for the task.
+                </div>
+                <br>
+
+                <h2>4. REVOKE Privileges from a User</h2>
+
+               
+                <section class="grid-section display">
+                    <p>Revoke SELECT privileges on a Table</p>
+                    <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">GRANT SELECT ON EMP_IND TO C## RAJ KUMARI;</div>
+                    </div>
+                
+                 
+                  
+                 
+
+                <section class="grid-section display">
+                    <p>Revoke ALL Privileges on a Table</p>
+                    <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">REVOKE ALL PRIVILEGES ON EMP_IND TO C## RAJ KUMARI;</div>
+                    </div>
+                 
+
+                <h2>5. Granting Public Access (ALL User)</h2>
+
+                <p>Sometimes, companies need to allow all users to view a table.</p>
+                <br>
+                <h3>Grant SELECT TO ALL Users</h3>
+        
+                    <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content"> GRANT SELECT ON EMP_IND TO C## RAJ KUMARI;</div>
+                   </div>
+                 
+                    
+                <h3>Grant SELECT from ALL Users</h3>
+
+                <div class="code-container">
+                    <div class="line-number">1</div>
+                    <div class="code-content">GRANT SELECT ON EMP_IND TO C## RAJ KUMARI;</div>
+                    </div>
+                    <p><b>Note</b>: PUBLIC means every current and future database user.</p>
+                 
+            <h2>6. Role-Based Access Control (Efficient Privilege Management)</h2>
+
+            <p>Roles work like permission groups</p>
+            <p>(similar to whatsApp groups for users).</p>
+
+            <p>Step 1: Create a Role</p>
+
+            <div class="code-container">
+              <div class="line-number">1</div>
+                <div class="code-content">CREATE ROLE company EMP_IND;</div>
+            </div>
+
+            <p>Step 2: Grant Privileges to Role</p>
+
+            <div class="code-container">
+              <div class="line-number">1</div>
+                <div class="code-content">GRANT SELECT ON EMP_IND;</div>
+            </div>
+
+            <p>Step 3: Assign Role to Users</p>
+
+            <div class="code-container">
+              <div class="line-number">1</div>
+                <div class="code-content">GRANT company_reader;</div>
+            </div>
+
+            <p>Step 3: Revoke Role from a Users</p>
+
+            <div class="code-container">
+              <div class="line-number">1</div>
+                <div class="code-content">REVOKE company_reader;</div>
+            </div>
+
+
+            <p>Step 4: Revoke Role to Users</p>
+
+            <div class="code-container">
+              <div class="line-number">1</div>
+                <div class="code-content">GRANT company_reade;</div>
+            </div>
+
+        <p><b>Tips</b>: Roles can also have privileges like INSERT, UPDATE, and DELETE.</p>
+        <br>
+
+        
+        <div class="reference-section">
+    <h3 class="reference-title">Quick Reference — Privilege Keywords</h3>
+    <table class="privilege-table">
+        <thead>
+            <tr>
+                <th>Keyword</th>
+                <th>Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>SELECT</td><td>Read/view data</td></tr>
+            <tr><td>INSERT</td><td>Add new rows</td></tr>
+            <tr><td>UPDATE</td><td>Modify existing records</td></tr>
+            <tr><td>DELETE</td><td>Remove records</td></tr>
+            <tr><td>REFERENCES</td><td>td>Define foreing key constaints</td></tr>
+            <tr><td>ALTER</td><td>Change table structure</td></tr>
+            <tr><td>INDEX</td><td>Create index</td></tr>
+        </tbody>
+    </table>
+</div>
+<br> 
+           
+<p>Security Tips:</p>
+<p>Always follow the principle of least privilege:</p><br>
+<p>Grant users only the permissions they absolutely need to perform their duties.</p><br>
+<p>This reduces security risks and prevents unauthorized changes.</p><br>
+<h2>Conclusion</h2>
+<p>By effectively using GRANT and REVOKE commands, you can:</p><br>
+
+<ul>
+    <li>control user access to database objects</li>
+    <li>Enhance security</li>
+    <li>Manage large teams eaisly through roles</li>
+</ul>
+
+           <div class="comment-section">
+    <h3 class="comment-count">(0) Comments</h3>
+    <div class="comment-input-container">
+        <img src="IMAGE/DefaultAuthorImage.jpg (1).jpg" alt="User Avatar" class="user-avatar">
+        <textarea placeholder="Type your comment here and press Enter Key (Minimum 10 characters)"></textarea>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-windows"></i></a>
+        <a href="#"><i class="fab fa-google-play"></i></a>
+        <a href="#"><i class="fab fa-apple"></i></a>
+        <a href="#"><i class="far fa-comment-dots"></i></a>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">About Us</a> <a href="#">Contact Us</a> <a href="#">Privacy Policy</a> <a href="#">Terms</a> <a href="#">Media Kit</a>
+        <a href="#">Partners</a> <a href="#">C# Tutorials</a> <a href="#">Consultants</a> <a href="#">Ideas</a>
+        <a href="#">Report A Bug</a> <a href="#">FAQs</a> <a href="#">Certifications</a> <a href="#">Sitemap</a> <a href="#">Stories</a>
+        <a href="#">CSharp TV</a> <a href="#">DB Talks</a> <a href="#">Let's React</a> <a href="#">Web3 Universe</a>
+        <a href="#">Interviews.help</a> <a href="#">Jumpstart Blockchain</a>
+    </div>
+
+    <p class="build-with">Build with JavaScript</p>
+    
+    <hr class="footer-divider">
+    
+    <div class="footer-bottom">
+        <p>©2025 C# Corner.</p>
+        <p>All contents are copyright of their authors.</p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            </article>
+
+            <aside class="right-sidebar">
+                <div class="sidebar-block ebook-download">
+                    <div class="block-header">Ebook download</div>
+                    <div class="ebook-card">
+                        <img src="IMAGE/React (Custom).webp" alt="Ebook Cover" class="ebook-cover">
+                        <h3>Base Blockchain Fundamentals</h3>
+                        <p>Read by 107 people</p>
+                        <button class="download-btn">Download Now</button>
+                    </div>
+                </div>
+
+                <div class="sidebar-block upcoming-events">
+                    <div class="block-header">Upcoming Events <a href="#">View all</a></div>
+                    <ul>
+                        <li>
+                            <span class="event-date">DEC <strong>29</strong></span>
+                            <span class="event-details">AI Agents Conference - 2025</span>
+                        </li>
+                        <li>
+                            <span class="event-date">DEC <strong>30</strong></span>
+                            <span class="event-details">AI Agents Conference - 2025</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block training-programs">
+                    <div class="block-header">Our Training Programs <a href="#">View all</a></div>
+                    <ul>
+                        <li><i class="fas fa-laptop-code"></i> AI & Machine Learning</li>
+                        <li><i class="fas fa-laptop-code"></i> Mastering Prompt Engineering</li>
+                    </ul>
+                </div>
+
+                <div class="slider-container">
+                <div class="slider-wrapper">
+                  <img src="IMAGE/13.jpg" alt="description">
+                  <img src="IMAGE/14.jpg" alt="description">
+                  <img src="IMAGE/13.jpg" alt="description">
+                  <img src="IMAGE/14.jpg" alt="description">
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+                </div>
+
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
